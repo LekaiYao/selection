@@ -19,6 +19,11 @@ Then analysis.C and analysis.h are created automatically. You can change the nam
     root> analysis t
     root> t.Loop()
 
+4.How to add more cut on a TTree without changes on its structure:
+  modify the input file and "Apply B_mass window cut" part in new_select.C, then
+  root -l new_select.C
+  (This code could also delete the nan/inf events.)
+
 
 
 The codes here:
